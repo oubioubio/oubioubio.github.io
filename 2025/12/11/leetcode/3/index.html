@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>3 | 43#root&#39;s blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="3以下是完整的 C++ 代码： 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768#include &lt;iostream&gt;#include &lt;vector&gt;#include">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3">
+<meta property="og:url" content="http://example.com/2025/12/11/leetcode/3/index.html">
+<meta property="og:site_name" content="43#root&#39;s blog">
+<meta property="og:description" content="3以下是完整的 C++ 代码： 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768#include &lt;iostream&gt;#include &lt;vector&gt;#include">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-12-10T21:39:41.000Z">
+<meta property="article:modified_time" content="2025-12-11T05:39:41.382Z">
+<meta property="article:author" content="43#root">
+<meta property="article:tag" content="C++">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="43#root's blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">43#root&#39;s blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-leetcode/3" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/12/11/leetcode/3/" class="article-date">
+  <time class="dt-published" datetime="2025-12-10T21:39:41.000Z" itemprop="datePublished">2025-12-11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/leetcode/">leetcode</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      3
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="3"><a href="#3" class="headerlink" title="3"></a>3</h1><p>以下是完整的 C++ 代码：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;unordered_map&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> ans = <span class="number">0</span>, left = <span class="number">0</span>;</span><br><span class="line">        unordered_map&lt;<span class="type">char</span>, <span class="type">int</span>&gt; cnt;</span><br><span class="line">        <span class="comment">/*统计当前窗口内每个元素的出现次数 */</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> right = <span class="number">0</span>; right &lt; s.<span class="built_in">size</span>(); right++) &#123;</span><br><span class="line">            <span class="comment">// 1. 进入窗口</span></span><br><span class="line">            <span class="type">char</span> c = s[right];</span><br><span class="line">            cnt[c]++;</span><br><span class="line">            <span class="keyword">while</span>(cnt[c] &gt; <span class="number">1</span>)&#123;</span><br><span class="line">                cnt[s[left]] --;</span><br><span class="line">                left++;</span><br><span class="line">            &#125;</span><br><span class="line">            ans = <span class="built_in">max</span>(ans,right-left<span class="number">+1</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">printResult</span><span class="params">(<span class="type">int</span> caseNum, <span class="type">long</span> <span class="type">long</span> expected, <span class="type">long</span> <span class="type">long</span> actual)</span> </span>&#123;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;测试用例 &quot;</span> &lt;&lt; caseNum &lt;&lt; <span class="string">&quot;: &quot;</span> </span><br><span class="line">         &lt;&lt; (actual == expected ? <span class="string">&quot;通过&quot;</span> : <span class="string">&quot;失败&quot;</span>) </span><br><span class="line">         &lt;&lt; <span class="string">&quot;（预期：&quot;</span> &lt;&lt; expected &lt;&lt; <span class="string">&quot;，实际：&quot;</span> &lt;&lt; actual &lt;&lt; <span class="string">&quot;）&quot;</span> &lt;&lt; endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Solution sol;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 每个元素是一个测试用例：&#123;nums, k, 预期结果&#125;</span></span><br><span class="line">    vector&lt;tuple&lt;string , <span class="type">long</span> <span class="type">long</span>&gt;&gt; testCases = &#123;</span><br><span class="line">        &#123;<span class="string">&quot;abcabcbb&quot;</span>, <span class="number">3</span>&#125;,    <span class="comment">// 测试用例1</span></span><br><span class="line"></span><br><span class="line">        &#123;<span class="string">&quot;bbbbb&quot;</span>, <span class="number">1</span>&#125;,   <span class="comment">// 测试用例2（假设预期也是55，实际可能不同）</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 新增测试用例只需在这里加一行，格式同上</span></span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; testCases.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">        <span class="comment">// 从测试用例中提取参数</span></span><br><span class="line"></span><br><span class="line">        string s = <span class="built_in">get</span>&lt;<span class="number">0</span>&gt;(testCases[i]);</span><br><span class="line">        <span class="comment">// vector&lt;int&gt; nums = get&lt;0&gt;(testCases[i]); // 第一个元素是nums</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// int k = get&lt;1&gt;(testCases[i]);            // 第二个元素是k</span></span><br><span class="line"></span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> expected = <span class="built_in">get</span>&lt;<span class="number">1</span>&gt;(testCases[i]); <span class="comment">// 第三个元素是预期结果</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调用函数（如果函数名/参数变了，只改这一行）</span></span><br><span class="line">        <span class="type">long</span> <span class="type">long</span> actual = sol.<span class="built_in">lengthOfLongestSubstring</span>(s);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 输出结果</span></span><br><span class="line">        <span class="built_in">printResult</span>(i + <span class="number">1</span>, expected, actual); <span class="comment">// i+1是测试用例编号（从1开始）</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/12/11/leetcode/3/" data-id="cuidx_ST4Jn0abUzNAfvV9YOA" data-title="3" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/12/11/leetcode/2841n/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2841n
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/12/11/leetcode/283/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">283</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/dairy/">dairy</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/leetcode/">leetcode</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C/" rel="tag">C++</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C/" style="font-size: 10px;">C++</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/12/">December 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/12/11/dairy/2024.11.24/">2024.11.24</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/dairy/2024.11.17/">2024.11.17</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/dairy/2024.11.10/">2024.11.10</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2025/12/11/leetcode/1423n/">1423n</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 43#root<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
