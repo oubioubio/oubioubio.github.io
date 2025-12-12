@@ -1,0 +1,41 @@
+name: Hexo 自动部署（含Notion同步）
+# 触发条件：每天8点（北京时间）、手动触发、推送代码到main分支
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC 0点 = 北京时间8点
+  workflow_dispatch:  # 手动触发开关
+  push:
+    branches: [ main ]  # 推代码到main分支时触发（如果你的分支是master，改成master）
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # 使用Ubuntu系统运行
+    steps:
+      # 步骤1：拉取GitHub仓库的源码到服务器
+      - name: 拉取博客源码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 拉取所有历史记录，避免部署出错
+
+      # 步骤2：安装Node.js（和本地版本一致即可，22版兼容所有依赖）
+      - name: 安装Node.js环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'  # 缓存npm依赖，加快速度
+
+      # 步骤3：安装Hexo和所有依赖（包括Notion SDK）
+      - name: 安装博客依赖
+        run: |
+          npm install hexo-cli -g  # 全局安装Hexo命令行
+          npm install  # 安装package.json里的依赖
+          npm install @notionhq/client@1.0.4 --force  # 安装Notion SDK（指定稳定版）
+
+      # 步骤4：生成Hexo静态文件并部署到GitHub Pages
+      - name: 生成并部署博客
+        env:
+          GITHUB_TOKEN: ${{ secrets.HEXO_DEPLOY_TOKEN }}  # 从Secrets取部署Token
+        run: |
+          hexo clean  # 清理旧文件
+          hexo generate  # 生成静态博客
+          hexo deploy  # 部署到GitHub Pages

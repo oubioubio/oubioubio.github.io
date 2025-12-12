@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int shortestSubarray(vector<int>& nums, int k) {
+        long long *preSum= new long long [nums.size()+1];
+        preSum[0]= 0;
+        int i= 0,minlen=nums.size()+1;
+        for( i=0; i<nums.size(); i++){
+            preSum[i+1]= preSum[i]+ nums[i];
+        }
+        deque<int> deq;
+        for( i=0; i<nums.size()+1; i++){
+            while( !deq.empty()&& preSum[i]<=preSum[deq.back()]){
+                deq.pop_back();
+            }
+            while( !deq.empty()&& preSum[i]-preSum[deq.front()]>=k){
+                int newlen = i-deq.front();
+                deq.pop_front();
+                if(newlen<minlen){
+                    minlen=newlen;
+                }
+            }
+            deq.push_back(i);
+        }
+        return minlen==nums.size()+1? -1: minlen;
+    }
+};
+
+// test
+int main() {
+    Solution sol;
+    vector<int> nums = {84,-37,32,40,95};
+    sol.shortestSubarray(nums,167);
+    vector<int> res = nums;
+    for (int num : res) cout << num << " ";
+    return 0;
+}
+//0,84,47,79,119,214
+
